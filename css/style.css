@@ -1,0 +1,102 @@
+* {
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-size: 1em;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../images/darkWood.jpg');
+	color: white;
+}
+
+.container {
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -325px;
+	margin-top: -175px;
+
+	background-image: url('../images/darkStripes.jpg');
+	border-radius: 20px;
+
+	padding: 20px;
+
+	box-shadow: 0 0 15px 8px rgba(0,0,0,.5);
+	border: dashed 5px rgba(0,0,0,.5);
+}
+
+.timerFrame {
+	height: 200px;
+}
+
+.controlFrame  {
+	height: 100px;
+}
+
+.hours, .minutes, .seconds {
+	width: 180px;
+	height: 180px;
+	margin: 5px 5px;
+	border-radius: 10px;
+
+	background-image: url('../images/clockBG.png');
+	
+	display: inline-block;
+	position: relative;
+}
+
+.hours {
+	margin-left: 15px;
+}
+
+.startButton, .resetButton {
+	width: 277.5px;
+	height: 80px;
+	margin: 15px 5px;
+	background-image: url('../images/buttonBG.png');
+	display: inline-block;
+	border-radius: 10px;
+	/*text-shadow:1px 1px 4px rgba(0,0,0,.4);*/
+}
+
+.startLabel, .resetLabel {
+	font-family: 'Days One', sans-serif;
+	font-weight: bold;
+	color: black;
+	opacity: 0.5;
+}
+
+.startButton {
+	margin-left: 15px;
+}
+
+.hourLabel, .minuteLabel, .secondLabel {
+	font-size: 30px;
+	margin-top: 20px;
+	border-bottom: solid rgba(28, 14, 0, .5);
+	height: 40px;
+	color: rgb(28, 14, 0);
+}
+
+p {
+	font-family: 'Oxygen', sans-serif;
+	text-align:	center;
+}
+
+.hoursCount > p, .minutesCount > p, .secondsCount > p {
+	color: rgb(28, 14, 0);
+	font-size: 110px;
+	margin-top: -15px;
+}
+
+.controlFrame p{
+	font-size: 50px;
+	margin-top: 10px;
+}
